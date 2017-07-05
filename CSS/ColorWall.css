@@ -1,0 +1,139 @@
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    background-image: url("../IMAGE/bgimage.jpg");
+    background-size: 100% 100%;
+    font-size: 23px;
+    font-family: "微软雅黑", sans-serif;
+    text-align: center;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+}
+#game
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#outTime
+{
+    position: absolute;
+    top: 2px;
+    font-size: 16px;
+    width: 100%;
+}
+#outTime_title
+{
+    float: left;
+    width: 20%;
+}
+#outTime_box
+{
+    margin-top: 5px;
+    float: left;
+    width: 61%;
+    height: 10px;
+    border-radius: 5px;
+    border:solid 1px #696969;
+    overflow: hidden;
+}
+#outTime_box_main
+{
+    width: 100%;
+    height: 100%;
+    background-color: #20b2aa;
+}
+#outTime_time
+{
+    float: left;
+    width: 18%;
+}
+#myTitle
+{
+    position: absolute;
+    width: 70%;
+    top: 7%;
+    left: 15%;
+}
+#myScore
+{
+    position: absolute;
+    top: 18%;
+    width: 100%;
+}
+#main
+{
+    position: absolute;
+    top: 23%;
+    width: 90%;
+    left:5%;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.1);
+}
+.strip
+{
+    position: relative;
+    float: left;
+    height: 100%;
+    width: 10%;
+    text-align: center;
+}
+.block
+{
+    position: absolute;
+    font-size: 18px;
+    width: 90%;
+    left: 5%;
+    height: 9%;
+    border-radius: 10% 10% 10% 10%;
+    cursor: pointer;
+}
+.bigBlock
+{
+    width: 100%;
+    height: 100%;
+}
+#reload
+{
+    position: absolute;
+    width:40%;
+    font-size: 24px;
+    height:40px;
+    line-height: 40px;
+    text-align: center;
+    bottom: 3%;
+    left:30%;
+    border-radius: 20px;
+    box-shadow: grey 0 5px 10px;
+    background-color: rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+#gameOver
+{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    font-size: 45px;
+    display: none;
+}
+@media screen and (min-width : 900px)
+{
+    #game{
+        width: 450px;
+        margin: 0 auto auto auto;
+    }
+}
